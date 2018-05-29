@@ -1,6 +1,6 @@
 {
   "name": "data-uri.macro",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Convert files to data-uris at build time.",
   "main": "lib",
   "scripts": {
