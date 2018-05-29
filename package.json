@@ -1,0 +1,45 @@
+{
+  "name": "data-uri.macro",
+  "version": "0.0.0",
+  "description": "Convert files to data-uris at build time.",
+  "main": "lib",
+  "scripts": {
+    "pretest": "npm run build",
+    "_test": "jest",
+    "precommit": "lint-staged",
+    "prebuild": "rimraf lib",
+    "build": "babel src -d lib",
+    "watch": "npm run build -- -w",
+    "prepare": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andarist/data-uri.macro.git"
+  },
+  "keywords": [
+    "babel-plugin-macros"
+  ],
+  "author": "Mateusz Burzyński <mateuszburzynski@gmail.com> (https://github.com/Andarist)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Andarist/data-uri.macro/issues"
+  },
+  "homepage": "https://github.com/Andarist/data-uri.macro#readme",
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.49",
+    "@babel/core": "7.0.0-beta.49",
+    "@babel/plugin-transform-modules-commonjs": "7.0.0-beta.49",
+    "@babel/preset-env": "7.0.0-beta.49",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
+    "husky": "^0.14.3",
+    "jest": "^23.0.1",
+    "lint-staged": "^7.1.2",
+    "prettier": "^1.13.0",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "babel-plugin-macros": "^2.0.0",
+    "mini-svg-data-uri": "^1.0.1"
+  }
+}
