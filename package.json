@@ -7,6 +7,7 @@
     "lib"
   ],
   "scripts": {
+    "pretest": "npm run build",
     "test": "jest",
     "precommit": "lint-staged",
     "prebuild": "rimraf lib",
@@ -38,6 +39,7 @@
     "husky": "^0.14.3",
     "jest": "^23.0.1",
     "lint-staged": "^7.1.2",
+    "module-alias": "^2.0.6",
     "prettier": "^1.13.0",
     "rimraf": "^2.6.2"
   },
