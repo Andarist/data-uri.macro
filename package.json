@@ -13,7 +13,10 @@
     "prebuild": "rimraf lib",
     "build": "babel src -d lib",
     "watch": "npm run build -- -w",
-    "prepare": "npm test"
+    "prepare": "npm test",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:major": "npm version major && npm publish && git push --follow-tags"
   },
   "repository": {
     "type": "git",
