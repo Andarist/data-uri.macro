@@ -7,7 +7,7 @@
     "lib"
   ],
   "scripts": {
-    "pretest": "npm run build",
+    "pretest": "npm-self-link && npm run build",
     "test": "jest",
     "precommit": "lint-staged",
     "prebuild": "rimraf lib",
@@ -42,7 +42,7 @@
     "husky": "^0.14.3",
     "jest": "^23.0.1",
     "lint-staged": "^7.1.2",
-    "module-alias": "^2.0.6",
+    "npm-self-link": "^1.1.5",
     "prettier": "^1.13.0",
     "rimraf": "^2.6.2"
   },
